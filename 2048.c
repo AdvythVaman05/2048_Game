@@ -13,7 +13,6 @@
 int grid[GRID_SIZE][GRID_SIZE] = {0};
 int score = 0;
 
-// Function prototypes
 void initGame();
 void spawnTile();
 int moveTiles(int direction);
@@ -48,7 +47,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    TTF_Font *font = TTF_OpenFont("Roboto-Regular.ttf", 48); // Provide the path to a valid TTF font
+    TTF_Font *font = TTF_OpenFont("Roboto-Regular.ttf", 48); 
     if (!font) {
         printf("TTF_OpenFont Error: %s\n", TTF_GetError());
         SDL_DestroyRenderer(renderer);
